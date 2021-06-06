@@ -1,0 +1,23 @@
+<h1>Show Skill</h1>
+
+<ul>
+
+  <li>
+    <strong>Name:</strong>
+    <%= @skill.name %>
+  </li>
+
+  <li>
+    <strong>Value:</strong>
+    <%= @skill.value %>
+  </li>
+
+  <li>
+    <strong>Grow:</strong>
+    <%= @skill.grow %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: Routes.skill_path(@conn, :edit, @skill) %></span>
+<span><%= link "Back", to: Routes.skill_path(@conn, :index) %></span>
